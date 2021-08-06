@@ -1,0 +1,11 @@
+--- drw.c	2021-04-16 06:30:47.718924755 +0300
++++ drw.c	2021-04-16 06:30:59.670925245 +0300
+@@ -208,7 +208,7 @@ drw_clr_create(Drw *drw, Clr *dest, cons
+ /* Wrapper to create color schemes. The caller has to call free(3) on the
+  * returned color scheme when done using it. */
+ Clr *
+-drw_scm_create(Drw *drw, const char *clrnames[], size_t clrcount)
++drw_scm_create(Drw *drw, char *clrnames[], size_t clrcount)
+ {
+ 	size_t i;
+ 	Clr *ret;
